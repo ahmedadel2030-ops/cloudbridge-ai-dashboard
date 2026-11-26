@@ -4,8 +4,6 @@ An intelligent hybrid cloud troubleshooting platform. It collects evidence from 
 
 > Graduation project, class of 2027. The built-in demo runs on simulated data.
 
-![Overview](docs/img/overview.png)
-
 ## Principles
 
 - **Rules find, AI explains.** Findings come from deterministic rules with a visible rule ID, source and time. The AI layer receives only the evidence list and cannot add findings.
@@ -22,10 +20,6 @@ An intelligent hybrid cloud troubleshooting platform. It collects evidence from 
 | Infrastructure | Searchable, filterable, sortable asset table with per-host trend and detail panel |
 | Connect data | Agent, HTTP API and CSV/JSON upload, with copyable commands |
 | Backend | FastAPI, SQLite, API key auth, input validation, 5 automated tests |
-
-| Incident | Infrastructure |
-|---|---|
-| ![Incident](docs/img/incident.png) | ![Infrastructure](docs/img/infrastructure.png) |
 
 ## Quick start
 
@@ -116,7 +110,7 @@ The root cause is the matching rule with the highest weight. Confidence is `0.55
 backend/    FastAPI app, rules engine, SQLite storage, tests
 frontend/   React + TypeScript dashboard (Vite). Includes an offline simulator
 agent/      collector.py (real metrics) and simulate_fleet.py (fake data)
-docs/       market research and screenshots
+docs/       market research
 ```
 
 Run the tests: `cd backend && python -m pytest -q`
