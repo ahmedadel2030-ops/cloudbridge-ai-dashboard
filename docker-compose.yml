@@ -1,0 +1,9 @@
+services:
+  cloudbridge:
+    build: .
+    ports: ["8000:8000"]
+    environment:
+      CB_API_KEY: ${CB_API_KEY:-dev-key-change-me}
+    volumes: ["cb-data:/data"]
+volumes:
+  cb-data:
